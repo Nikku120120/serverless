@@ -9,7 +9,9 @@
     "serverless-offline": "^8.0.0"
   },
   "devDependencies": {
+    "@shelf/jest-dynamodb": "^1.8.1",
     "aws-sdk": "^2.616.0",
+    "jest": "^27.0.6",
     "serverless": "^1.63.0",
     "serverless-webpack": "^5.5.1",
     "webpack": "^4.41.6"

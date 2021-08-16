@@ -8,6 +8,15 @@ if(process.env.IS_OFFLINE){
         endpoint: 'http://localhost:8000'
     }
 }
+
+if(process.env.JEST_WORKER_ID){
+    options = { 
+        region: 'local-env',
+        endpoint: 'http://localhost:8000',
+        sslEnabled: false
+    }
+}
+
 const documentClient = new AWS.DynamoDB.DocumentClient(options);
 
 const Dynamo = {
