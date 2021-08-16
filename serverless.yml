@@ -3,8 +3,6 @@ service: myserverlessproject3
 provider:
     name: aws
     runtime: nodejs12.x
-    profile: serverlessUser
-    region: eu-west-1
     environment:
         tableName: ${self:custom.tableName}
         bucketName: ${self:custom.bucketName}
@@ -24,7 +22,7 @@ package:
 
 custom:
     tableName: player-points-table
-    bucketName: myserverlessprojectuploadbucket-123123
+    bucketName: myserverlessprojectuploadbucket-120120
 
 functions:
     getPlayerScore:
