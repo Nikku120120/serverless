@@ -4,7 +4,9 @@
   "description": "",
   "main": "webpack.config.js",
   "dependencies": {
-    "serverless-jest-plugin": "^0.3.0"
+    "serverless-dynamodb-local": "^0.2.39",
+    "serverless-jest-plugin": "^0.3.0",
+    "serverless-offline": "^8.0.0"
   },
   "devDependencies": {
     "aws-sdk": "^2.616.0",
